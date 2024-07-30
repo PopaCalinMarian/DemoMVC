@@ -1,0 +1,40 @@
+﻿@model DemoMVC.Models.UserProfileViewModel
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>User Profile</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            UserID
+        </dt>
+        <dd class="col-sm-10">
+            @Model.UserID
+        </dd>
+        <dt class="col-sm-2">
+            Login Name
+        </dt>
+        <dd class="col-sm-10">
+            @Model.LoginName
+        </dd>
+        <dd class="navbar">
+            <ul class="navbar-nav flex-grow-1">
+            <li>
+                <div class="form-group">
+                   <button type="submit" class="btn btn-primary">Account Settings</button>
+                   </div>
+            </li>
+            <li>
+                 <div class="form-group">
+                   <button type="submit" class="btn btn-primary">Log Out</button>
+                  </div>
+            </li>
+        </dd>
+    </dl>
+       
+</div>
